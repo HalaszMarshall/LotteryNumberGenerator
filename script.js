@@ -16,7 +16,7 @@ var numSet;
 		console.log(numAm)
 
 		var genNum = Math.floor(Math.random() * (max - min + 1) + min);
-		if(numSet.indexOf(genNum) === -1) numSet.push(genNum);
+		if((numSet.indexOf(genNum) === -1) && genNum > 0 )numSet.push(genNum);
 	}
 	displayResult(numSet);
 }	
